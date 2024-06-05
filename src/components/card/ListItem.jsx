@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ListItem({name , price , srcImg , addItem}) {
+function ListItem({name , price , srcImg , addItem , titleBtn}) {
   
   return (
     <>
@@ -17,7 +17,7 @@ function ListItem({name , price , srcImg , addItem}) {
           <p className=' font-bold'>{Math.floor(price / 60000)} $</p>
         </div>
         <div id='btn' className=' self-center'>
-          <button className='bg-red-400 text-white rounded-lg hover:bg-red-700 w-28 text-center' onClick={addItem}>add to basket !</button>
+          <button className='bg-red-400 text-white rounded-lg hover:bg-red-700 w-28 text-center' onClick={addItem}>{titleBtn}</button>
         </div>
       </div>
     </>

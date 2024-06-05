@@ -1,7 +1,6 @@
 import React from 'react'
 import { useRoutes } from 'react-router-dom'
 import HomePage from './pages/Home.component';
-import {Products} from './store/products';
 import ProductPage from './pages/Product.component';
 import BasketPage from './pages/Basket.component';
 import NotFound from './components/NotFound';
@@ -28,7 +27,6 @@ function App() {
   return (
     <>
     {routes}
-    <Products />
     </>
   )
 }

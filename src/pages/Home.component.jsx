@@ -1,6 +1,7 @@
-import React from 'react'
+import {useState , useEffect} from 'react'
 import { Outlet } from 'react-router-dom';
 import MenuComponent from '../components/MenuComponent';
+import ListCard from '../components/card/ListCard';
 
 function HomePage() {
   
@@ -8,8 +9,9 @@ function HomePage() {
     <>
     <div>
       <MenuComponent />
-      <Outlet />
+      <Outlet/>
     </div>
+    
     </>
   )
 }
